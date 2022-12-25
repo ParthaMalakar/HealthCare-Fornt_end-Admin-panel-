@@ -26,6 +26,10 @@ import Donar from './components/Donar';
 import Collected from './components/Collected_Donar';
 import Verify from './components/Verify';
 import Confirmmail from './components/Confirmmail';
+import Feedback from './components/Feedback';
+import Doctorrep from './components/Doctorrep';
+import RepSend from './components/RepSend';
+import RepRec from './components/RepRec';
 function App() {
   
 
@@ -59,7 +63,10 @@ function App() {
         <Route path='/collected/' element={<Collected/>} />
         <Route path='/verify/' element={<Verify/>} />
         <Route path='/confirmmail/' element={<Confirmmail/>} />
-
+        <Route path='/feedback/' element={<Feedback/>} />
+        <Route path='/doctors/rep' element={<Doctorrep/>} />
+        <Route path='/repsend/' element={<RepSend/>} />
+        <Route path='/reprec/' element={<RepRec/>} />
       </Routes>
       </BrowserRouter>
     </div>

@@ -112,9 +112,19 @@ useEffect(() => {
     navigate('/verify/')
   
   }
+  const loadfeedback=()=>{
+    
+    navigate('/feedback/')
+  
+  }
   const loadLogout=()=>{
     
     navigate('/logout')
+  
+  }
+  const loadDoctorsrep=()=>{
+    
+    navigate('/doctors/rep')
   
   }
   
@@ -124,7 +134,7 @@ useEffect(() => {
         <a onClick={()=>{loadAppointments(pid)}} className='btn btn-success'>Hospital Information</a>
 
         <a onClick={()=>{loadDoctors()}} className='btn btn-success'>Information Doctors</a>
-        <a onClick={()=>{loadBloodBanks()}} className='btn btn-success'>Find Blood</a>
+        <a onClick={()=>{loadBloodBanks()}} className='btn btn-success'> Blood Information</a>
         <a onClick={()=>{loadAmbulances()}} className='btn btn-success'>Confirm Ambulances</a>
         <a onClick={()=>{loadnotice()}} className='btn btn-success'>ADD Notice</a>
         <a onClick={()=>{loadPatient()}} className='btn btn-success'>patient Information</a>
@@ -132,7 +142,8 @@ useEffect(() => {
         <a onClick={()=>{loadBlood()}} className='btn btn-success'>Assign Donar</a>
         <a onClick={()=>{loadCollectedDo()}} className='btn btn-success'>BloodGivenDonarList </a>
         <a onClick={()=>{loadVerify(pid)}} className='btn btn-success'>VeificationForUpdateProfile </a>
-        <a onClick={()=>{loadnotice()}} className='btn btn-success'>ADD Notice</a>
+        <a onClick={()=>{loadfeedback()}} className='btn btn-success'>Patient Feedback</a>
+        <a onClick={()=>{loadDoctorsrep()}} className='btn btn-success'>ReportSendandRecived</a>
         <a onClick={()=>{loadLogout(pid)}} className='btn btn-success'>Logout</a>
        <div className='reg'>
        
